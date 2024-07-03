@@ -26,3 +26,13 @@
 
 ![image](https://github.com/Felix-Silas/Oil_Extraction_Anomaly_Detection/assets/84503487/bb38b38c-b823-4bd1-b127-6bdd2dde136f)
 ![image](https://github.com/Felix-Silas/Oil_Extraction_Anomaly_Detection/assets/84503487/b27b114d-a062-4bf8-a0a2-8c38b228d39c)
+
+## 모형 계획
+### 현 상황
+1. 선행 논문 다수 존재: 1개 클래스에 대해 이상 탐지를 하는 경우, 선행 연구가 충분히 많으므로 경쟁력 부족.  
+2. 연산량, 복잡도 고려: 해커톤 당일 기관에서 제공하는 제한된 분석플랫폼 상에서 모든 팀이 구현을 진행해야 하므로 연산량과 복잡도를 최소화해야 함.  
+3. GPU 사용 불가: 다중 이상 탐지에 적합한 모형들은 대부분 GPU가 필수적으로 필요함. 하지만 해커톤 당일 GPU 사용 불가능.  
+--> 이를 해결하기 위해 특정 클래스에 필요한 특성만 고려하여 개별 이상 탐지기 구현한 후, 하나의 다중 클래스 이상 탐지기로 통합 
+
+### 실제 구현 모델
+![image](https://github.com/Felix-Silas/Oil_Extraction_Anomaly_Detection/assets/84503487/5e75240a-920a-489c-9401-e53822ef4ccd)
